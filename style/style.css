@@ -1,0 +1,173 @@
+.santa-claus, .santa-claus .animated-after-unload {
+  transition: transform 1280ms ease-in-out;
+}
+
+.santa-claus {
+  display: block;
+  position: fixed;
+  top: 55%;
+  right: -80px;
+  width: 80px;
+  height: 80px;
+  z-index: 1052;
+}
+
+.santa-claus.play {
+  transform: translateX(-80px);
+}
+
+.santa-claus > .container {
+  cursor: pointer;
+}
+
+.santa-claus .container {
+  height: auto;
+  width: auto;
+}
+
+.santa-claus .container .animated-after-unload {
+  display: block;
+  position: absolute;
+  right: 5px;
+  width: 100%;
+  height: 100%;
+  z-index: 2;
+  transform-origin: right;
+  animation-fill-mode: forwards;
+}
+
+.santa-claus .container .animated-after-unload.play {
+  -webkit-transform: rotate(28deg);
+  -ms-transform: rotate(28deg);
+  transform: rotate(28deg);
+}
+
+.santa-claus .container img {
+  position: absolute;
+}
+
+.santa-claus .container img.cap {
+  right: 26px;
+  top: 8px;
+  transform: rotate(-40deg);
+  transition-property: right;
+  z-index: 3;
+}
+
+.santa-claus .container img.face {
+  right: 20px;
+  top: 10px;
+  transform: rotate(-40deg);
+  z-index: 4;
+}
+
+.santa-claus .container img.mouth {
+  right: 25px;
+  top: 29px;
+  width: 3px;
+  height: auto;
+  transition-property: width;
+  transform: rotate(-40deg);
+  z-index: 4;
+}
+
+.santa-claus .container img.beard {
+  right: 4px;
+  top: 10px;
+  transform: rotate(-40deg);
+  z-index: 2;
+}
+
+.santa-claus .container img.arm {
+  right: 0;
+  z-index: 2;
+  top: -7px;
+}
+
+.santa-claus .container img.torso {
+  right: 0;
+  z-index: 1;
+}
+
+.santa-claus .santa-claus__pop-up {
+  display: none;
+  position: absolute;
+  width: 292px;
+  height: 170px;
+  top: -109px;
+  margin-top: -94px;
+  right: 15px;
+  box-shadow: 0 0 10px #00000029;
+  border-radius: 10px 10px 0 10px;
+  background-color: white;
+}
+
+.santa-claus .santa-claus__pop-up .container {
+  padding: 20px;
+}
+
+.santa-claus .santa-claus__pop-up .container a {
+  font-family: sans-serif;
+  font-size: 20px;
+  letter-spacing: 0;
+  text-align: left;
+  margin: 0 0 5px;
+}
+
+.santa-claus .santa-claus__pop-up .container p {
+  font-family: sans-serif;
+  font-size: 16px;
+  text-align: left;
+}
+
+.santa-claus .santa-claus__pop-up .container button {
+  width: 100%;
+  margin: 0;
+  padding: 6px;
+  border: 0;
+  border-radius: 7px;
+  font-size: 16px;
+  text-align: center;
+  background-color: #ffdfd9;
+  cursor: pointer;
+}
+
+.santa-claus .santa-claus__pop-up .container .santa-claus__close {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  width: 23px;
+  height: 23px;
+  opacity: .8;
+  background: none;
+  padding: 0;
+}
+
+.santa-claus .santa-claus__pop-up .container .santa-claus__close img {
+  display: block;
+  position: relative;
+  height: auto;
+  width: 100%;
+  vertical-align: middle;
+}
+
+.santa-claus .santa-claus__pop-up .santa-claus__angle {
+  position: absolute;
+  right: 0;
+  bottom: -16px;
+  width: 30px;
+  height: 16px;
+  overflow: hidden;
+}
+
+.santa-claus .santa-claus__pop-up .santa-claus__angle:before {
+  content: ' ';
+  display: block;
+  margin-top: -20px;
+  margin-left: 14px;
+  width: 30px;
+  height: 30px;
+  background-color: white;
+  transform: rotate(-50deg);
+  box-shadow: 0 0 10px #00000029;
+}
